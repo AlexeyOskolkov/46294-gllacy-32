@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алексей Осколков](https://up.htmlacademy.ru/htmlcss/32/user/46294).
-* Наставник: [Татьяна Симоненко] (https://htmlacademy.ru/profile/id6613).
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/id6613).
 
 ---
 
