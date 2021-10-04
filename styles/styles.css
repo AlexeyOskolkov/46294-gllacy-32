@@ -1,0 +1,109 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.navigation-link {
+  text-align: center;
+  color:#2D3440;
+  text-decoration: none;
+}
+
+.navigation-user-item a {
+  text-align: center;
+  color:#2D3440;
+  text-decoration: none;
+}
+
+.navigation-user-link {
+  text-align: center;
+  color:#2D3440;
+  text-decoration: none;
+}
+
+.product-card {
+  width: 270px;
+  height: 281px;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+.features {
+  width: 1170px;
+  height: 480px;
+  background-image: url("/img/background-waffle.jpg");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.article-blog {
+  width: 570px;
+  height: 216px;
+  background-image: url("/img/background-blog.jpg");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.newsletter {
+  width: 570px;
+  height: 220px;
+  background-image: url("/img/background-post.png");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.appointment {
+  width: 1170px;
+  height: 534px;
+  background-image: url("/img/background-delivery.jpg");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
+.contacts {
+  width: 1170px;
+  height: 492px;
+  background-image: url("/img/background-adress.jpg");
+  background-repeat: no-repeat;
+  border-radius: 16px;
+}
+
