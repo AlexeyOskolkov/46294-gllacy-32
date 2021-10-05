@@ -42,6 +42,12 @@ h2 {
   line-height: 46px;
 }
 
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
 /* Навигация */
 .navigation-link {
   text-align: center;
@@ -75,6 +81,7 @@ h2 {
   height: 281px;
   background-color: #FCFCFC;
   border-radius: 8px;
+  margin-bottom: 80px;
 }
 
 /* Особенности */
@@ -84,6 +91,7 @@ h2 {
   background-image: url("../img/background-waffle.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
+  margin: 80px 0px 80px 98px;
 }
 
 .features-items-block {
@@ -104,6 +112,7 @@ h2 {
   background-image: url("../img/background-blog.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
+  margin: 80px 0px 80px 98px;
 }
 
 /* Рассылка */
@@ -113,6 +122,7 @@ h2 {
   background-image: url("../img/background-post.png");
   background-repeat: no-repeat;
   border-radius: 16px;
+  margin: 80px 0px 80px 98px;
 }
 
 .newsletter-block {
@@ -129,6 +139,7 @@ h2 {
   background-image: url("../img/background-delivery.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
+  margin: 80px 0px 80px 98px;
 }
 
 .appointment-block {
@@ -146,6 +157,7 @@ h2 {
   background-image: url("../img/background-adress.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
+  margin: 80px 0px 80px 98px;
 }
 
 .contacts-block {
