@@ -355,7 +355,6 @@ h3 {
 
 .product-card {
   display: grid;
-  grid-template-columns: 135px 135px;
   grid-template-areas:
    "image image"
    "title title"
@@ -369,16 +368,11 @@ h3 {
   margin-top: 91px;
   padding-left: 40px;
   padding-right: 40px;
+  box-sizing: border-box;
 }
 
 .product-card-main {
   margin-top: 0;
-}
-
-.product-card h4 {
-  margin: 0;
-  margin-bottom: 8px;
-  padding: 0;
 }
 
 .product-card-image {
@@ -388,8 +382,6 @@ h3 {
   margin-top: -51px;
   border-radius: 50%;
   margin-bottom: 16px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .product-card-title{
@@ -397,6 +389,9 @@ h3 {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 8px;
+  padding: 0;
 }
 
 .product-card-description {
@@ -406,20 +401,13 @@ h3 {
   padding: 0;
 }
 
-.product-card a {
-  color:#2D3440;
-  text-decoration: none;
-}
-
 .product-card-price {
   grid-area: price;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   margin: 0;
-  margin-left: 40px;
   margin-bottom: 28px;
-  margin-right: auto;
   padding: 0;
 }
 
@@ -433,8 +421,6 @@ h3 {
   height: 32px;
   background-color: #FF2F64;
   border-radius: 26px;
-  margin-right: 40px;
-  margin-left: auto;
   margin-bottom: 24px;
 }
 
