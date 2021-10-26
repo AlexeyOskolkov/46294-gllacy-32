@@ -83,7 +83,7 @@ h3 {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  width: 400px;
+  width: 550px;
   line-height: 20px;
   margin-top: 34px;
   padding: 0;
@@ -102,11 +102,11 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: auto;
   padding: 0;
   width: 419px;
+  margin: auto;
   margin-top: 36px;
-  margin-left: auto;
+  margin-bottom: 57px;
   line-height: 20px;
   color:#2D3440;
   text-decoration: none;
@@ -171,6 +171,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 60px;
   margin-right: auto;
 }
 
@@ -302,7 +303,7 @@ h3 {
 
 .section-present-item-raspberries {
   background-image: url("../img/present-raspberries.png");
-  background-position: 100% 100%;
+  background-position: 95% 100%;
   background-repeat: no-repeat;
 }
 
@@ -331,13 +332,13 @@ h3 {
 }
 
 .product-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 270px);
+  column-gap: 30px;
   margin: 0;
-  padding: 0;
   margin-bottom: 80px;
+  padding: 0;
+  list-style-type: none;
 }
 
 .product-card {
@@ -346,6 +347,11 @@ h3 {
   background-color: #FCFCFC;
   border-radius: 8px;
   list-style-type: none;
+  margin-top: 91px;
+}
+
+.product-card-main {
+  margin-top: 0;
 }
 
 .product-card h4 {
@@ -412,7 +418,6 @@ h3 {
 
 .features-items {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   margin: 0;
   padding-bottom: 16px;
@@ -420,7 +425,7 @@ h3 {
 
 .features-item {
   display: flex;
-  align-items: center;
+  min-width: 530px;
   padding-bottom: 40px;
 }
 
@@ -651,8 +656,6 @@ h3 {
 
 .footer-menu {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 356px;
   font-weight: 400;
@@ -662,6 +665,10 @@ h3 {
 
 .footer-menu-item-suppliers {
   font-weight: 700;
+}
+
+.footer-menu-item {
+  min-width: 150px;
 }
 
 .page-footer ul {
@@ -703,33 +710,46 @@ h3 {
 }
 
 /* Фильтры */
+
 .catalog-filter {
+  display: grid;
+  grid-template-columns: 196px 196px 156px 187px;
+  grid-template-rows: 64px 64px;
+  gap: 40px 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.fat {
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+}
+
+.into {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+.catalog-filter-group ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+  column-gap: 40px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 /* Каталог */
-.product-list-catalog {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-  flex-wrap: wrap;
-  width: 1170px;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 48px;
-}
 
 .pagination-container {
   display: flex;
-  flex-direction: row;
   width: 1170px;
 }
 
 .button-catalog-filter {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
   width: 187px;
   height: 36px;
   background-color: rgba(252, 252, 252, 0.3);
@@ -748,6 +768,8 @@ h3 {
 }
 
 .pagination-current {
+  padding: 2px 8px;
+  margin: -2px -8px;
   width: 24px;
   height: 24px;
   background: #FCFCFC;
@@ -766,10 +788,10 @@ h3 {
 
 .pagination-catalog {
   display: flex;
-  flex-direction: row;
+
   margin-left: auto;
   flex-basis: 200px;
-  gap: 8px;
+  column-gap: 16px;
 }
 
 .visually-hidden {
