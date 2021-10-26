@@ -25,6 +25,7 @@
 body {
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   min-height: 100%;
   font-family: "Inter", Arial, sans-serif;
@@ -169,6 +170,7 @@ h3 {
 /* Слайдер */
 .slider-gallery-description {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   margin-left: 60px;
@@ -189,14 +191,14 @@ h3 {
 
 .slider-gallery-image-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .slider-gallery {
   display: flex;
-
+  flex-wrap: wrap;
 }
 
 .slider-button {
@@ -234,7 +236,7 @@ h3 {
 
 .slider-pagination {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -255,6 +257,7 @@ h3 {
 
 .slider-gallery-bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 80px;
 }
@@ -265,8 +268,8 @@ h3 {
 }
 .section-present {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   margin-bottom: 80px;
@@ -342,6 +345,13 @@ h3 {
 }
 
 .product-card {
+  display: grid;
+  grid-template-columns: 135px 135px;
+  grid-template-areas:
+   "image image"
+   "title title"
+   "description description"
+   "price basket";
   text-align: center;
   width: 270px;
   background-color: #FCFCFC;
@@ -361,21 +371,25 @@ h3 {
 }
 
 .product-card-image {
+  grid-area: image;
   max-width: 100%;
   height: auto;
   margin-top: -51px;
   border-radius: 50%;
   margin-bottom: 16px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .product-card-title{
+  grid-area: title;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 }
 
 .product-card-description {
-  display: block;
+  grid-area: description;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
@@ -387,24 +401,30 @@ h3 {
 }
 
 .product-card-price {
+  grid-area: price;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-align: left;
   margin: 0;
   margin-left: 40px;
   margin-bottom: 28px;
+  margin-right: auto;
   padding: 0;
 }
 
 .product-card-button {
+  grid-area: basket;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 32px;
   height: 32px;
-  background-image: url("../img/icons/icon-basket.svg");
-  color: #FCFCFC;
   background-color: #FF2F64;
-  background-repeat: no-repeat;
   border-radius: 26px;
+  margin-right: 40px;
+  margin-left: auto;
+  margin-bottom: 24px;
 }
 
 /* Особенности */
@@ -425,6 +445,7 @@ h3 {
 
 .features-item {
   display: flex;
+  flex-wrap: wrap;
   min-width: 530px;
   padding-bottom: 40px;
 }
@@ -455,6 +476,7 @@ h3 {
 /* Блок с блогом и подпиской на новости */
 .blog {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 80px;
 }
@@ -497,6 +519,7 @@ h3 {
 
 .newsletter-block p {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -509,6 +532,7 @@ h3 {
 
 .newsletter-form {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 42px;
 }
 
@@ -528,6 +552,7 @@ h3 {
 /* Доставка */
 .appointment {
   display: flex;
+  flex-wrap: wrap;
   width: 1170px;
   background-image: url("../img/background-delivery.jpg");
   background-repeat: no-repeat;
@@ -555,6 +580,7 @@ h3 {
 
 .appointment-block {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   max-width: 500px;
   background-color: #FCFCFC;
@@ -578,6 +604,7 @@ h3 {
 /* Контакты */
 .contacts {
   display: flex;
+  flex-wrap: wrap;
   background-image: url("../img/background-address.jpg");
   background-repeat: no-repeat;
   border-radius: 16px;
@@ -648,7 +675,7 @@ h3 {
 /* Футер */
 .page-footer-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 1170px;
   margin: 48px auto;
@@ -691,7 +718,7 @@ h3 {
 /* Хлебные крошки */
 .breadcrumbs {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 250px;
   padding: 0;
@@ -714,7 +741,7 @@ h3 {
 .catalog-filter {
   display: grid;
   grid-template-columns: 196px 196px 156px 187px;
-  grid-template-rows: 64px 64px;
+  grid-template-rows: min-content;
   gap: 40px 24px;
   font-weight: 400;
   font-size: 14px;
@@ -734,16 +761,21 @@ h3 {
 
 .catalog-filter-group ul {
   display: flex;
+  flex-wrap: wrap;
   column-gap: 40px;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
+.catalog-filter-item {
+  min-width: 60px;
+}
 /* Каталог */
 
 .pagination-container {
   display: flex;
+  flex-wrap: wrap;
   width: 1170px;
 }
 
@@ -788,7 +820,7 @@ h3 {
 
 .pagination-catalog {
   display: flex;
-
+  flex-wrap: wrap;
   margin-left: auto;
   flex-basis: 200px;
   column-gap: 16px;
