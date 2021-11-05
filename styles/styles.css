@@ -722,7 +722,7 @@ h3 {
   width: 82px;
   height: 0px;
   right: 45px;
-  top: 15px;
+  top: 16px;
   opacity: 0.5;
   border: 1px solid #2D3440;
   box-sizing: border-box;
@@ -828,6 +828,7 @@ h3 {
   border-radius: 20px;
   cursor: pointer;
 }
+
 .pagination-link {
   padding: 2px 8px;
   margin: -2px -8px;
@@ -849,6 +850,10 @@ h3 {
 
 
 .pagination-current {
+  padding: 2px 8px;
+  margin: -2px -8px;
+  width: 24px;
+  height: 24px;
   background: #FCFCFC;
   border-radius: 50%;
 }
