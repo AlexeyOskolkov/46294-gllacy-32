@@ -267,6 +267,7 @@ h3 {
 
 .slider-image-current-container {
   position: relative;
+  width: 350px;
 }
 
 .slider-image-current-container::before {
@@ -283,7 +284,10 @@ h3 {
 
 .slider-control {
   position: absolute;
+  display: flex;
+  justify-content: space-between;
   top: 50%;
+  width: 100%;
   transform: translateY(-50%);
 }
 
