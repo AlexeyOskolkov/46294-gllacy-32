@@ -281,6 +281,12 @@ h3 {
   top: calc(50% - 312px/2);
 }
 
+.slider-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .slider-button {
   width: 38px;
   height: 38px;
