@@ -70,17 +70,17 @@
               <button class="button slider-gallery-button button-main" type="button">Заказать</button>
             </div>
             <div class="slider-gallery-image-container">
+              <div class="slider-image-current-container">
               <button class="slider-button slider-prev" type="button">
-
                 <span class="visually-hidden">Предыдущий слайд</span>
               </button>
-              <img class="slider-image slider-image-current" src="img/ice-cream-strawberry.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом.">
+              <img class="slider-image-current" src="img/ice-cream-strawberry.png" width="306" height="507" alt="Нежный пломбир с клубничным джемом.">
               <button class="slider-button slider-next" type="button">
-
                 <span class="visually-hidden">Следующий слайд</span>
               </button>
-              <img class="slider-image" src="img/ice-cream-banana.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана.">
-              <img class="slider-image" src="img/ice-cream-marshmallow.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу.">
+            </div>
+              <div class="slider-image-container"><img class="slider-image" src="img/ice-cream-banana.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана."></div>
+              <div class="slider-image-container"><img class="slider-image" src="img/ice-cream-marshmallow.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу."></div>
             </div>
           </div>
           <!-- <div class="slider-gallery">
@@ -113,12 +113,12 @@
         <div class="slider-gallery-bottom">
           <ol class="slider-pagination">
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
+              <button class="slider-pagination-button slider-pagination-button-current" type="button">
                 <span class="visually-hidden">Нежный пломбир с клубничным джемом</span>
               </button>
             </li>
             <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <button class="slider-pagination-button" type="button">
                 <span class="visually-hidden">Сливочное мороженое со вкусом банана</span>
               </button>
             </li>
