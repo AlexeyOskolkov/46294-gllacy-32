@@ -395,6 +395,7 @@ h3 {
 
 .button-social-icon:hover {
   background: #2D3440;
+  border: 2px solid rgba(252, 252, 252, 0.2);
 }
 
 .button-social-icon:focus {
