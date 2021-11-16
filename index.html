@@ -35,6 +35,16 @@
                 Поиск
               </span>
             </a>
+            <div class="popover-search popover-cart">
+              <div class="popover-content">
+                <h3 class="visually-hidden">Поиск по сайту</h3>
+                <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <p class="field-group appointment-form-add">
+                    <input class="field" placeholder="Поиск по сайту" type="text" id="appointment-add" name="appointment-add">
+                  </p>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link navigation-user-enter" href="#">
@@ -43,6 +53,28 @@
                 </svg>
               Вход
             </a>
+            <div class="popover-login popover-cart">
+              <div class="popover-content">
+                <h3 class="popover-title">Личный кабинет</h3>
+                <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <p class="field-group newsletter-email">
+                    <label class="visually-hidden" for="newsletter-email">Email</label>
+                    <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+                  </p>
+                  <p class="field-group">
+                    <label class="visually-hidden" for="auth-password">Логин</label>
+                    <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+                  </p>
+                  <div class="auth-form-user-options-container">
+                    <button class="button button-add auth-form-button" type="submit">Войти</button>
+                    <p class="field-group auth-form-user-options">
+                      <a class="auth-form-recovery" href="#">Забыли пароль?</a>
+                      <a class="auth-form-register" href="#">Регистрация</a>
+                    </p>
+                </div>
+                </form>
+              </div>
+            </div>
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link navigation-user-basket" href="#">
@@ -51,6 +83,11 @@
                 </svg>
                 Пусто
               </span>
+              <div class="popover-basket popover-main">
+                <div class="popover-content">
+                  <h3 class="popover-title popover-title-main">Ваша корзина пока пуста</h3>
+                </div>
+              </div>
             </a>
           </li>
         </ul>
@@ -91,7 +128,8 @@
               <div class="slider-image-container"><img class="slider-image" src="img/ice-cream-marshmallow.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу."></div>
             </div>
           </div>
-          <!-- <div class="slider-gallery">
+          <span class="visually-hidden">
+          <div class="slider-gallery">
             <div class="slider-gallery-description">
               <h1>Сливочное мороженое<br>
                 со вкусом банана</h1>
@@ -104,6 +142,8 @@
               <img class="slider-image" src="img/ice-cream-banana.png" width="66" height="150" alt="Сливочное мороженое со вкусом банана.">
             </div>
           </div>
+          </span>
+          <span class="visually-hidden">
           <div class="slider-gallery">
             <div class="slider-gallery-description">
               <h1>Карамельный пломбир<br>
@@ -116,7 +156,8 @@
             <div class="slider-gallery-image-container">
               <img class="slider-image" src="img/ice-cream-marshmallow.png" width="66" height="150" alt="Карамельный пломбир с маршмеллоу.">
             </div>
-          </div> -->
+          </div>
+        </span>
         </section>
         <div class="slider-gallery-bottom">
           <ol class="slider-pagination">
@@ -308,27 +349,28 @@
             <p>Укажите адрес и дату доставки, и мы свяжемся<br>
               с вами, чтобы подтвердить заказ.</p>
             <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="appointment-form-date">
+              <p class="field-group appointment-form-date">
                 <span class="form-label form-label-icon">
                   <label for="appointment-date">Дата</label>
                   <button class="info" type="button">
-                    <img src="img/icons/icon-info.svg" width="13" height="13" alt="">
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                   </button>
                 </span>
-                <input type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020"></p>
-              <p class="appointment-form-phone">
-                <label for="appointment-form-phone">Телефон</label>
-                <input type="text" id="appointment-form-phone" name="appointment-form-phone" placeholder="+7 800 999-00-00"></p>
-              <p class="appointment-form-name">
+                <input class="field" type="text" id="appointment-date" name="appointment-date" placeholder="01.04.2020">
+              </p>
+              <p class="field-group appointment-form-phone">
+                <label class="form-label" for="appointment-form-phone">Телефон</label>
+                <input class="field" type="text" id="appointment-form-phone" name="appointment-form-phone" placeholder="+7 800 999-00-00">
+              </p>
+              <p class="field-group appointment-form-adress">
                 <span class="form-label form-label-icon">
-                  <label for="appointment-name">Адрес</label>
+                  <label for="appointment-adress">Адрес</label>
                   <button class="info" type="button">
-                    <img src="img/icons/icon-info.svg" width="13" height="13" alt="">
                     <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                   </button>
                 </span>
-                <input class="field" type="text" id="appointment-name" name="appointment-name" placeholder="ул. Большая Конюшенная, 19/8"></p>
+                <input class="field" type="text" id="appointment-adress" name="appointment-adress" placeholder="ул. Большая Конюшенная, 19/8">
+              </p>
               <button class="button button-send button-add" type="submit">Отправить</button>
             </form>
           </div>
@@ -400,5 +442,31 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-feedback">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h3 class="modal-title">Мы обязательно ответим вам!</h3>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group appointment-form-name">
+              <label class="visually-hidden" for="newsletter-email">ФИО</label>
+              <input class="field" placeholder="Имя и фамилия" type="text" id="appointment-add" name="appointment-add">
+            </p>
+            <p class="field-group newsletter-email">
+              <label class="visually-hidden" for="newsletter-email">Email</label>
+              <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+            </p>
+            <p class="field-group appointment-form-add">
+              <input class="field" placeholder="В свободной форме" type="text" id="appointment-add" name="appointment-add">
+            </p>
+          </form>
+        </section>
+        <button class="button button-send button-add button-feedback" type="submit">Отправить</button>
+      </div>
+
+    </div>
   </body>
 </html>
