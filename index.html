@@ -14,6 +14,25 @@
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог</a>
+            <div class="popover-menu">
+              <ul class="navigation-menu">
+                <li class="navigation-menu-item">
+                  <a class="navigation-menu-link" href="#">Новинки</a>
+                </li>
+                <li class="navigation-menu-item">
+                  <a class="navigation-menu-link" href="#">Сливочное</a>
+                </li>
+                <li class="navigation-menu-item">
+                  <a class="navigation-menu-link navigation-menu-link-current" href="#">Щербеты</a>
+                </li>
+                <li class="navigation-menu-item">
+                  <a class="navigation-menu-link" href="#">Фруктовые лед</a>
+                </li>
+                <li class="navigation-menu-item">
+                  <a class="navigation-menu-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка и оплата</a>
@@ -39,7 +58,7 @@
               <div class="popover-content">
                 <h3 class="visually-hidden">Поиск по сайту</h3>
                 <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
-                  <p class="field-group appointment-form-add">
+                  <p class="field-group-search appointment-form-add">
                     <input class="field" placeholder="Поиск по сайту" type="text" id="appointment-add" name="appointment-add">
                   </p>
                 </form>
@@ -83,12 +102,12 @@
                 </svg>
                 Пусто
               </span>
-              <div class="popover-basket popover-main">
-                <div class="popover-content">
-                  <h3 class="popover-title popover-title-main">Ваша корзина пока пуста</h3>
-                </div>
-              </div>
             </a>
+            <div class="popover-basket popover-main">
+              <div class="popover-content">
+                <h3 class="popover-title popover-title-main">Ваша корзина пока пуста</h3>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
@@ -442,7 +461,6 @@
         </div>
       </div>
     </footer>
-
     <div class="modal-container modal-container-close">
       <div class="modal modal-feedback">
         <button class="modal-close-button">
@@ -452,7 +470,7 @@
           <h3 class="modal-title">Мы обязательно ответим вам!</h3>
           <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group appointment-form-name">
-              <label class="visually-hidden" for="newsletter-email">ФИО</label>
+              <label class="visually-hidden" for="appointment-form-name">ФИО</label>
               <input class="field" placeholder="Имя и фамилия" type="text" id="appointment-add" name="appointment-add">
             </p>
             <p class="field-group newsletter-email">
@@ -466,7 +484,6 @@
         </section>
         <button class="button button-send button-add button-feedback" type="submit">Отправить</button>
       </div>
-
     </div>
   </body>
 </html>

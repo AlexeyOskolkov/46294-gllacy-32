@@ -216,6 +216,10 @@ h3 {
   margin-right: 8px;
 }
 
+.navigation-item {
+  position: relative;
+}
+
 /* Слайдер */
 .slider-gallery-description {
   display: flex;
@@ -1421,7 +1425,6 @@ h3 {
   color: #2D3440;
   background-color: #FCFCFC;
   border-radius: 4px;
-  min-height: 336px;
   display: none;
 }
 
@@ -1532,7 +1535,6 @@ h3 {
   color: #2D3440;
   background-color: #FCFCFC;
   border-radius: 4px;
-  min-height: 350px;
   display: none;
 }
 
@@ -1559,8 +1561,8 @@ h3 {
 
 .popover-search {
   position: absolute;
-  top: 75px;
-  right: 510px;
+  top: 40px;
+  right: 0;
   z-index: 1;
   box-sizing: border-box;
   padding: 16px 24px;
@@ -1568,14 +1570,100 @@ h3 {
   color: #2D3440;
   background-color: #FCFCFC;
   border-radius: 4px;
-  height: 96px;
   display: none;
+}
+
+.feedback-form .field-group-search {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #B9B9B9;
+}
+
+.field-group-search {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* Поповер Меню */
+
+.popover-menu {
+  position: absolute;
+  top: 40px;
+  left: 16px;
+  z-index: 1;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #2D3440;
+  background-color: #FCFCFC;
+  border-radius: 4px;
+  min-width: 138px;
+  display: none;
+}
+
+.navigation-menu {
+  position: relative;
+  margin: 0;
+  padding: 16px;
+}
+
+.navigation-menu .navigation-menu-item {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #2D3440;
+  list-style-type: none;
+}
+
+.navigation-menu-link {
+  color:#2D3440;
+  text-decoration: none;
+}
+
+.navigation-menu-item:hover {
+  background: #FFCBD8;
+}
+
+.navigation-menu-item:focus,
+.navigation-menu-item:active {
+  background: #FF7799;
+}
+
+.navigation-menu-link-current {
+  color: #FCFCFC;
+  background: #FF4A78;
+}
+
+.navigation-menu .navigation-menu-item:first-child {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2D3440;
+}
+
+.navigation-menu .navigation-menu-item:first-child::before {
+  position: absolute;
+  top: 48px;
+  width: 106px;
+  border: 1px solid #B9B9B9;
+  content: "";
+}
+
+.navigation-menu .navigation-menu-item:last-child {
+  margin: 0;
 }
 
 /* Модальное окно */
 
 .modal-container {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   display: flex;
@@ -1627,10 +1715,6 @@ h3 {
   line-height: 20px;
   font-weight: 400;
   color: #B9B9B9;
-}
-
-.appointment-form-add {
-  min-height: 149px;
 }
 
 .button-feedback {
