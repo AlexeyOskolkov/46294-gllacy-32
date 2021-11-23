@@ -41,24 +41,6 @@ body {
   height: 100%;
 }
 
-h1 {
-  font-weight: 900;
-  font-size: 36px;
-  line-height: 46px;
-}
-
-h2 {
-  font-weight: 900;
-  font-size: 32px;
-  line-height: 46px;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-}
-
 .main-container {
   flex-grow: 1;
 }
@@ -222,6 +204,13 @@ h3 {
 
 .navigation-item {
   position: relative;
+}
+
+.inner-header-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 46px;
 }
 
 /* Слайдер */
@@ -448,9 +437,13 @@ h3 {
 
 .present h2 {
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 52px;
   padding: 0;
+  max-width: 450px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
 }
 
 .section-present {
@@ -477,21 +470,29 @@ h3 {
   background-repeat: no-repeat;
 }
 
-
-
 .section-present-item h3 {
   margin: 0;
   margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .section-present-item p {
   margin-bottom: 24px;
+  max-width: 325px;
 }
 
 /* Карточка товара */
 .product h2 {
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 10px;
+  padding: 0;
+  max-width: 550px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
 }
 
 .product-list {
@@ -615,7 +616,7 @@ h3 {
 /* Особенности */
 .features {
   background-image: url("../img/background-waffle.jpg");
-  background-size: auto;
+  background-color: #FF2F64;
   border-radius: 16px;
   padding: 24px;
   margin-bottom: 72px;
@@ -638,6 +639,7 @@ h3 {
 .features-item p {
   margin: 0;
   margin-left: 16px;
+  max-width: 450px;
 }
 
 .features-items-block {
@@ -648,10 +650,15 @@ h3 {
 .features-items-block h2 {
   display: block;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   padding-top: 54px;
   padding-bottom: 54px;
+  text-align: center;
+  max-width: 1000px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
 }
 
 .features ul {
@@ -672,6 +679,7 @@ h3 {
   height: 216px;
   background-image: url("../img/background-blog.jpg");
   background-repeat: no-repeat;
+  background-color: #FF2F64;
   border-radius: 16px;
 }
 
@@ -679,6 +687,10 @@ h3 {
   margin: 0;
   padding: 0;
   padding-left: 32px;
+  max-width: 315px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .article-blog p {
@@ -699,6 +711,7 @@ h3 {
   max-width: 570px;
   background-image: url("../img/background-post.png");
   background-repeat: no-repeat;
+  background-color: #FF2F64;
   border-radius: 16px;
   padding: 6px;
 }
@@ -708,6 +721,7 @@ h3 {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  max-width: 506px;
 }
 .newsletter-block {
   max-width: 558px;
@@ -733,10 +747,9 @@ h3 {
 /* Доставка */
 .appointment {
   display: flex;
-  flex-wrap: wrap;
-  width: 1170px;
   background-image: url("../img/background-delivery.jpg");
   background-repeat: no-repeat;
+  background-color: #FF2F64;
   border-radius: 16px;
   padding: 64px;
   margin-bottom: 80px;
@@ -765,6 +778,10 @@ h3 {
   padding-left: 36px;
   padding-bottom: 24px;
   margin: 0;
+  max-width: 360px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
 }
 
 .delivery-block p {
@@ -773,18 +790,17 @@ h3 {
   padding-left: 36px;
   padding-bottom: 99px;
   margin: 0;
+  max-width: 380px;
 }
 
 .appointment-block {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  max-height: 406px;
+  max-width: 500px;
   background-color: #FCFCFC;
   border-radius: 8px;
   box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
   margin-left: 135px;
   padding: 40px;
+
 }
 
 .form-label {
@@ -820,14 +836,17 @@ h3 {
 
 .field {
   margin: 0;
-  padding: 12px 16px;
+  padding: 14px 16px;
   font: inherit;
   font-weight: 400;
-  color: #B9B9B9;
+  color: #2D3440;
   background: #FFFFFF;
   border: 1px solid #B9B9B9;
   box-sizing: border-box;
   border-radius: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .field:hover {
@@ -835,10 +854,14 @@ h3 {
 }
 
 .field:focus {
-  border: 2px solid #2D3440;
+  border: 1px solid #2D3440;
 }
 
 .field:focus:invalid {
+  border: 1px solid #EA5454;
+}
+
+.field:invalid {
   border: 1px solid #EA5454;
 }
 
@@ -865,6 +888,7 @@ h3 {
   flex-wrap: wrap;
   background-image: url("../img/background-address.jpg");
   background-repeat: no-repeat;
+  background-color: #FF2F64;
   border-radius: 16px;
   padding: 64px;
 }
@@ -1585,6 +1609,10 @@ h3 {
 
 .auth-form-user-options a {
   color: #2D3440;
+}
+
+.auth-form-recovery {
+  margin-bottom: 4px;
 }
 
 /* Поповер Поиск */
