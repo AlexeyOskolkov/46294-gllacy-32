@@ -170,9 +170,11 @@ h3 {
   align-items: center;
   background: rgba(252, 252, 252, 0.3);
   color:#2D3440;
+  border: 2px solid transparent;
   border-radius: 26px;
   font-size: 14px;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 .navigation-user-link:hover {
@@ -182,7 +184,6 @@ h3 {
 .navigation-user-link:focus {
   background: rgba(252, 252, 252, 0.5);
   border: 2px solid #2D3440;
-  box-sizing: border-box;
 }
 
 .navigation-user-link:active {
@@ -1080,6 +1081,10 @@ h3 {
   background: #2D3440;
 }
 
+.range-toggle:active::before {
+  background: #2D3440;
+}
+
 .range-toggle:focus {
   background: #FCFCFC;
   border: 2px solid #2D3440;
@@ -1148,40 +1153,12 @@ h3 {
   padding-left: 36px;
 }
 
-.control-mark {
-  position: absolute;
-  top: 2px;
-  left: 12px;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/icons/icon-checkbox-empty.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-}
-
-.control:hover .control-mark {
-  background-image: url("../img/icons/icon-checkbox-empty-focus.svg");
-}
-
-.control-input[type="checkbox"]:checked + .control-mark::before {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 15px;
-  height: 15px;
-  background-image: url("../img/icons/icon-checkbox-check.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  content: "";
-}
-
 .control-radio {
   position: absolute;
   top: 1px;
   left: 10px;
-  width: 15px;
-  height: 15px;
+  width: 16px;
+  height: 16px;
   border: 1px solid #000000;
   border-radius: 50%;
 }
@@ -1205,8 +1182,44 @@ h3 {
   content: "";
 }
 
-.control-input[type="radio"]:checked + .control-radio:hover:before {
+.control-input[type="radio"]:checked:hover + .control-radio:before {
   background-color: #FCFCFC;
+}
+
+.control-mark {
+  position: relative;
+}
+
+.control-mark::before {
+  position: absolute;
+  top: 2px;
+  left: -23px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icons/icon-checkbox-empty.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.control:hover .control-mark::before {
+  background-image: url("../img/icons/icon-checkbox-empty-focus.svg");
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 2px;
+  left: -23px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icons/icon-checkbox-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+}
+
+.control-input[type="checkbox"]:hover:checked + .control-mark::before {
+  background-image: url("../img/icons/icon-checkbox-check-focus.svg");
 }
 
 .catalog-filter-group {
@@ -1236,6 +1249,7 @@ h3 {
   border-radius: 20px;
   padding: 8px 16px;
   margin-top: 8px;
+  border: none;
 }
 
 /* Каталог */
@@ -1393,7 +1407,7 @@ h3 {
   border: 2px solid #FCFCFC;
   border-radius: 20px;
   padding: 12px 32px;
-  margin-top: 25px;
+  margin-top: 23px;
   background-clip: padding-box;
   cursor: pointer;
 }
@@ -1519,6 +1533,7 @@ h3 {
 .cart-item-button {
   background-image: url("../img/icons/icon-basket-delete.svg");
   background-repeat: no-repeat;
+  background-color: transparent;
   border: none;
   margin: 0;
   padding: 0;
@@ -1615,18 +1630,16 @@ h3 {
   background-color: #FCFCFC;
   border-radius: 4px;
   min-width: 138px;
-  /* display: none; */
+  display: none;
 }
 
 .navigation-menu {
   position: relative;
   margin: 0;
-  padding: 16px;
+  padding: 0;
 }
 
 .navigation-menu .navigation-menu-item {
-  margin: 0;
-  margin-bottom: 12px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -1635,8 +1648,10 @@ h3 {
 }
 
 .navigation-menu-link {
+  display: block;
   color:#2D3440;
   text-decoration: none;
+  padding: 8px 16px;
 }
 
 .navigation-menu-link:hover {
@@ -1655,12 +1670,14 @@ h3 {
 }
 
 .navigation-menu .navigation-menu-item:first-child {
+  position: relative;
   margin: 0;
-  margin-bottom: 24px;
+  padding: 0;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
   color: #2D3440;
+  padding: 16px;
 }
 
 .navigation-menu .navigation-menu-item:first-child::before {
