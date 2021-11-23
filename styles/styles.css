@@ -941,6 +941,23 @@ body {
 }
 
 /* Футер */
+
+.page-footer {
+  position: relative;
+}
+
+.page-footer::before {
+  position: absolute;
+  width: 1170px;
+  height: 0px;
+  left: calc(50% - 1170px/2);
+  top: -15px;
+  border: 1px solid #FCFCFC;
+  opacity: 0.3;
+  box-sizing: border-box;
+  content: "";
+}
+
 .page-footer-container {
   display: flex;
   flex-wrap: wrap;
@@ -1328,6 +1345,11 @@ body {
   height: 24px;
   background: #FCFCFC;
   border-radius: 50%;
+}
+
+.pagination-disabled:hover {
+  background: transparent;
+  opacity: 1;
 }
 
 .pagination-catalog li {
