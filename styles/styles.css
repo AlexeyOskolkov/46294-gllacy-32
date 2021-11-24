@@ -623,7 +623,7 @@ body {
 /* Особенности */
 .features {
   background-image: url("../img/background-waffle.jpg");
-  background-color: #FF2F64;
+  background-color: #E2D4B4;
   border-radius: 16px;
   padding: 24px;
   margin-top: 74px;
@@ -687,7 +687,7 @@ body {
   height: 216px;
   background-image: url("../img/background-blog.jpg");
   background-repeat: no-repeat;
-  background-color: #FF2F64;
+  background-color: #FCFCFC;
   border-radius: 16px;
 }
 
@@ -719,7 +719,7 @@ body {
   max-width: 570px;
   background-image: url("../img/background-post.png");
   background-repeat: no-repeat;
-  background-color: #FF2F64;
+  background-color: #FCFCFC;
   border-radius: 16px;
   padding: 6px;
 }
@@ -757,7 +757,7 @@ body {
   display: flex;
   background-image: url("../img/background-delivery.jpg");
   background-repeat: no-repeat;
-  background-color: #FF2F64;
+  background-color: #F2F2F2;
   border-radius: 16px;
   padding: 64px;
   margin-bottom: 70px;
@@ -895,7 +895,7 @@ body {
   flex-wrap: wrap;
   background-image: url("../img/background-address.jpg");
   background-repeat: no-repeat;
-  background-color: #FF2F64;
+  background-color: #E2BEC2;
   border-radius: 16px;
   padding: 64px;
 }
@@ -941,22 +941,6 @@ body {
 }
 
 /* Футер */
-
-.page-footer {
-  position: relative;
-}
-
-.page-footer::before {
-  position: absolute;
-  width: 1170px;
-  height: 0px;
-  left: calc(50% - 1170px/2);
-  top: -15px;
-  border: 1px solid #FCFCFC;
-  opacity: 0.3;
-  box-sizing: border-box;
-  content: "";
-}
 
 .page-footer-container {
   display: flex;
@@ -1317,6 +1301,18 @@ body {
   flex-wrap: wrap;
   width: 1170px;
   margin-bottom: 84px;
+}
+
+.pagination-container::before {
+  position: absolute;
+  width: 1170px;
+  height: 0px;
+  left: calc(50% - 1170px/2);
+  bottom: -70px;
+  border: 1px solid #FCFCFC;
+  opacity: 0.3;
+  box-sizing: border-box;
+  content: "";
 }
 
 .pagination-link {
