@@ -67,7 +67,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 54px;
 }
 
 .navigation-list {
@@ -128,7 +128,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
-  gap: 16px;
+  gap: 17px;
   width: 420px;
   padding: 0;
   width: 460px;
@@ -158,7 +158,7 @@ body {
   align-items: center;
   background: rgba(252, 252, 252, 0.3);
   color:#2D3440;
-  border: 2px solid transparent;
+  outline: 2px solid transparent;
   border-radius: 26px;
   font-size: 14px;
   text-decoration: none;
@@ -171,7 +171,7 @@ body {
 
 .navigation-user-link:focus {
   background: rgba(252, 252, 252, 0.5);
-  border: 2px solid #2D3440;
+  outline: 2px solid #2D3440;
 }
 
 .navigation-user-link:active {
@@ -189,7 +189,7 @@ body {
 }
 
 .navigation-user-enter {
-  padding: 6px 16px;
+  padding: 6px 13px;
   padding-left: 16px;
 }
 
@@ -198,8 +198,8 @@ body {
 }
 
 .navigation-user-basket {
-  padding: 6px 16px;
-  padding-left: 16px;
+  padding: 6px 10px;
+  padding-left: 20px;
 }
 
 .navigation-user-basket .navigation-icon {
@@ -213,7 +213,7 @@ body {
 .inner-header-title {
   font-family: "Inter", sans-serif;
   font-weight: 900;
-  font-size: 36px;
+  font-size: 32px;
   line-height: 46px;
   margin: 0;
   margin-top: 16px;
@@ -226,7 +226,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  margin-left: 75px;
+  margin-left: 70px;
   margin-right: auto;
   max-width: 430px;
 }
@@ -245,7 +245,7 @@ body {
 .slider-gallery-description p {
   margin: 0;
   margin-top: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   padding: 0;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -355,6 +355,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-top: 3px;
   padding: 0;
   list-style-type: none;
 }
@@ -435,7 +436,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 70px;
+  margin-bottom: 76px;
 }
 
 /* Подарок */
@@ -446,9 +447,9 @@ body {
 .present h2 {
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 52px;
+  margin-bottom: 55px;
   padding: 0;
-  max-width: 450px;
+  max-width: 440px;
   font-weight: 900;
   font-size: 32px;
   line-height: 46px;
@@ -459,23 +460,28 @@ body {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-bottom: 76px;
+  margin-bottom: 80px;
 }
 
 .section-present-item {
   width: 570px;
   list-style-type: none;
   padding: 40px;
+  background-color: #FF7799;
+  box-sizing: border-box;
+  border-radius: 16px;
 }
 
 .section-present-item-raspberries {
   background-image: url("../img/present-raspberries.png");
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .section-present-item-marshmallow {
   background-image: url("../img/present-marshmallow.png");
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .section-present-item h3 {
@@ -487,8 +493,12 @@ body {
 }
 
 .section-present-item p {
-  margin-bottom: 24px;
+  margin-bottom: 29px;
   max-width: 325px;
+}
+
+.present-button {
+  margin-bottom: -2px;
 }
 
 /* Карточка товара */
@@ -522,11 +532,11 @@ body {
    "price basket";
   text-align: center;
   justify-content: center;
-  width: 265px;
   background-color: #FCFCFC;
   border-radius: 8px;
   list-style-type: none;
   margin-top: 96px;
+  margin-bottom: -5px;
   padding-left: 40px;
   padding-right: 40px;
   box-sizing: border-box;
@@ -538,7 +548,7 @@ body {
   height: auto;
   border-radius: 50%;
   margin-top: -51px;
-  margin-bottom: 14px;
+  margin-bottom: 17px;
   margin-left: auto;
   margin-right: auto;
   filter: drop-shadow(0px 4px 12px rgba(45, 52, 64, 0.1));
@@ -626,8 +636,8 @@ body {
   background-color: #E2D4B4;
   border-radius: 16px;
   padding: 24px;
-  margin-top: 74px;
-  margin-bottom: 72px;
+  margin-top: 83px;
+  margin-bottom: 80px;
 }
 
 .features-items {
@@ -660,7 +670,7 @@ body {
   text-align: center;
   margin: 0 auto;
   padding: 0;
-  padding-top: 54px;
+  padding-top: 58px;
   padding-bottom: 54px;
   text-align: center;
   max-width: 1000px;
@@ -678,13 +688,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 68px;
+  margin-bottom: 74px;
 }
 
 /* Блог */
 .article-blog {
   width: 570px;
-  height: 216px;
+  height: 221px;
   background-image: url("../img/background-blog.jpg");
   background-repeat: no-repeat;
   background-color: #FCFCFC;
@@ -695,7 +705,7 @@ body {
   margin: 0;
   padding: 0;
   padding-left: 32px;
-  max-width: 315px;
+  margin-bottom: 300px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -760,13 +770,14 @@ body {
   background-color: #F2F2F2;
   border-radius: 16px;
   padding: 64px;
-  margin-bottom: 70px;
+  margin-bottom: 76px;
 }
 
 .appointment-form {
   display: grid;
-  grid-template-columns: 113px 283px;
-  grid-gap: 16px;
+  grid-template-columns: 117px 287px;
+  grid-gap: 20px;
+  column-gap: 16px;
 }
 
 .appointment-form-adress {
@@ -776,7 +787,7 @@ body {
 .appoitment-item {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .delivery-block h2 {
@@ -843,7 +854,7 @@ body {
 
 .field {
   margin: 0;
-  padding: 14px 16px;
+  padding: 13px 16px;
   font: inherit;
   font-weight: 400;
   color: #2D3440;
@@ -919,8 +930,19 @@ body {
   text-decoration: none;
 }
 
+.contacts-address p:nth-child(2) {
+  margin-top: 24px;
+}
+
+.contacts-address p:nth-child(4) {
+  margin-top: -2px;
+  margin-bottom: 28px;
+}
+
 .contacts-address p:last-child {
-  margin-bottom: 32px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .contacts-address-street-city {
@@ -938,6 +960,7 @@ body {
   line-height: 24px;
   color: #2D3440;
   text-decoration: none;
+  margin-top: 4px;
 }
 
 /* Футер */
@@ -947,7 +970,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 1170px;
-  margin: 36px auto;
+  margin: 43px auto;
 }
 
 .footer-menu {
@@ -986,7 +1009,7 @@ body {
   position: relative;
   font-size: 12px;
   line-height: 16px;
-  margin-right: 26px;
+  margin-right: 14px;
 }
 
 .contacts-htmlacademy::before {
@@ -1018,7 +1041,7 @@ body {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-top: 14px;
+  margin-top: 12px;
 }
 
 .breadcrumbs-item {
@@ -1144,7 +1167,7 @@ body {
 
 .toggle-max {
   top: -7px;
-  right: -8px;
+  right: -12px;
 }
 
 .range {
@@ -1167,7 +1190,7 @@ body {
 }
 
 .catalog-filter-title {
-  margin-left: 20px;
+  margin-left: 16px;
 }
 
 .range-input {
@@ -1195,10 +1218,10 @@ body {
 
 .control-radio {
   position: absolute;
-  top: 1px;
-  left: 10px;
-  width: 16px;
-  height: 16px;
+  top: 2px;
+  left: 6px;
+  width: 14px;
+  height: 14px;
   border: 1px solid #000000;
   border-radius: 50%;
 }
@@ -1213,8 +1236,8 @@ body {
 
 .control-input[type="radio"]:checked + .control-radio::before {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 4px;
+  left: 4px;
   width: 6px;
   height: 6px;
   background-color: #2D3440;
@@ -1818,7 +1841,7 @@ body {
 
 .button-feedback {
   margin-left: auto;
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 .modal-container-close {
